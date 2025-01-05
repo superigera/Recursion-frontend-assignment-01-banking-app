@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset=“utf-8”>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+            rel="stylesheet">
+
+        <title>Banking App</title>
+    </head>
+    <body>
+        <div
+            class="vh-100 d-flex justify-content-center align-items-center bg-dark">
+            <div
+                class="d-flex justify-content-center align-items-center col-md-7 col-10">
+                <div id="initial-form"
+                    class="d-block p-4 bg-white text-center col-12">
+                    <h2>Please type your information below</h2>
+                    <form id="bank-form" class="form">
+                        <div class="form-row mt-4">
+                            <div class="form-group col">
+                                <input type="text" name="userFirstName"
+                                    class="form-control"
+                                    placeholder="First name" value="test"
+                                    required>
+                            </div>
+                            <div class="form-group col">
+                                <input type="text" name="userLastName"
+                                    class="form-control" placeholder="Last name"
+                                    value="test" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="userEmail"
+                                class="form-control" placeholder="Email"
+                                value="test@test.com" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="userFirstDeposit"
+                                class="form-control"
+                                placeholder="Enter your first deposit"
+                                value="100" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio"
+                                    name="userAccountType" id="userAccountType1"
+                                    value="savings" checked required>
+                                <label class="form-check-label"
+                                    for="userAccountType1">Savings</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio"
+                                    name="userAccountType" id="userAccountType2"
+                                    value="checkings" required>
+                                <label class="form-check-label"
+                                    for="userAccountType2">Checkings</label>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+                <!-- 2ページ目の枠 -->
+                <div id="bank-page"
+                    class="d-none bg-green col-12 text-center text-white pt-md-4 px-4 pt-1"></div>
+                <div id="side-page"
+                    class="d-none bg-white col-12 text-center px-2 px-md-5 py-3 py-md-4"></div>
+            </div>
+        </div>
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
